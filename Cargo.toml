@@ -1,0 +1,18 @@
+[package]
+description = "When compiling Rust is not hurtful enough~"
+repository = "https://github.com/funkeleinhorn/cargo-shock"
+license = "GPL-3.0-or-later"
+name = "cargo-shock"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+fastrand = "1.8.0"
+rzap = "0.2.1"
+supports-unicode = "3.0.0"
+tokio = { version = "1.45.0", features = ["macros"] }
+
+[[bin]]
+name = "cargo-shock"
+test = false
+bench = false
